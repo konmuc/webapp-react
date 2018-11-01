@@ -48,6 +48,8 @@
     "resolve": "1.8.1",
     "sass-loader": "7.1.0",
     "style-loader": "0.23.0",
+    "superagent": "^4.0.0-beta.5",
+    "superagent-promise": "^1.1.0",
     "terser-webpack-plugin": "1.1.0",
     "url-loader": "1.1.1",
     "webpack": "4.19.1",
@@ -113,9 +115,24 @@
   "babel": {
     "presets": [
       "react-app"
+    ],
+    "plugins": [
+      [
+        "@babel/plugin-proposal-decorators",
+        {
+          "legacy": true
+        }
+      ],
+      [
+        "@babel/plugin-proposal-class-properties",
+        {
+          "loose": true
+        }
+      ]
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
     "@babel/plugin-proposal-decorators": "^7.1.2"
   }
 }
