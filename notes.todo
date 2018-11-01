@@ -1,0 +1,96 @@
+Web app prototype:
+    
+    Design:
+        Colors:
+            Logo:
+                red: #e40000
+                dark-blue: #021f42
+            KonGeoS:
+                orange: #f38f14
+                blue: #033794
+                gray: #999999
+            Fachschaft:
+                turquoise: #009793
+        
+        Typography:
+            font-family: 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif;
+
+        Inspirations:
+            ☐ Jodel
+            ☐ yik yak
+            ☐ Google Chrome
+
+        Icons:
+            ☐ logo
+            ☐ Feed
+            ☐ Upvote
+            ☐ Downvote
+            ☐ Time ago
+            ☐ Comments
+            ☐ Geolocation
+            ☐ Profile icon
+            ☐ Submit post
+            ☐ submit comment
+            ☐ Back navigation
+            ☐ Default profile picture
+
+    Features:
+        AuthModule:
+            ✔ signIn @done (9/22/2018, 5:07:48 PM)
+                ✔ redirect to feed on success @done (10/14/2018, 11:56:29 PM)
+            ✔ signUp @done (10/8/2018, 10:33:25 AM)
+                ☐ password confirmation
+                ☐ redirect to sign-in on success
+            ✔ signOut @done (9/22/2018, 7:29:38 PM)
+                ✔ redirect to sign-in @done (10/14/2018, 11:59:10 PM)
+
+        Logging module:
+            ✔ clear and hide after some time @done (9/22/2018, 7:30:26 PM)
+            ✔ add logging and warning @done (9/22/2018, 7:30:28 PM)
+        
+        Feed module:
+            ✔ add overflow scroll to @done (9/21/2018, 10:09:57 PM)
+            ✔ Up-/downvote @done (10/8/2018, 10:33:17 AM)
+            ✔ Comments @done (10/11/2018, 10:41:17 PM)
+                Similar to new post
+
+        Post/Comment module:
+            ✔ Simple post with text @started(18-09-22 19:30) @done (9/22/2018, 7:53:19 PM)
+            ☐ Enable images
+            ☐ Enable geolocation
+            ☐ Votes for comments
+
+        Routing module:
+            ✔ Listen for hash change @done (10/8/2018, 2:50:03 PM)
+
+        Profile module:
+            ☐ Set profile
+            ☐ Load profile
+                ☐ Load user profile on successful sign-in
+
+        Users module:
+            ☐ display user info
+
+    Components:
+        ☐ profile
+        ☐ feed/post list
+        ☐ post
+        ☐ comment
+        ☐ vote
+        ☐ create post/comment
+        ☐ events
+        ☐ event
+        ☐ map/location
+        ☐ authentication @started(18-11-01 13:42)
+            ☐ sign-up
+            ☐ sign-in
+            ☐ sign-out
+
+    Stuff to think about:
+        ✔ set the date of a post/comment on the server @done(18-10-11 22:48)
+        ☐ why do I only get an new accesstoken and not also an new refreshtoken, if fresh the token
+        ✔ remove html script tags from a post/comment to prevent Cross side scripting @done (10/11/2018, 10:48:28 PM)
+        ✔ api endpoint to https @started(18-09-21 22:12) @done (9/22/2018, 7:30:04 PM)
+        ☐ store images in separat directory
+        ☐ add pinned attribute to post
+        ☐ send back post on new comment created
