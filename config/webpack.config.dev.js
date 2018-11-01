@@ -256,6 +256,9 @@ module.exports = {
                   { helpers: true },
                 ],
               ],
+              plugins: [
+                '@babel/plugin-proposal-decorators'
+              ],
               cacheDirectory: true,
               // Don't waste time on Gzipping the cache
               cacheCompression: false,

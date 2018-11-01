@@ -328,6 +328,9 @@ module.exports = {
                   { helpers: true },
                 ],
               ],
+              plugins: [
+                '@babel/plugin-proposal-decorators'
+              ],
               cacheDirectory: true,
               // Save disk space when time isn't as important
               cacheCompression: true,
